@@ -12,6 +12,7 @@ This Library portal mainly has the following features:
 6. Book PDFs uploaded only by the Admin
 7. User-friendly and easy to read web pages.
 
+## System Requirements 
 Frameworks used: Postgresql (version 14), Djaango
 Operating System: Linux-Ubuntu
 Python packages: django, pycopgy2-binary
