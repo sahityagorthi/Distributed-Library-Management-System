@@ -52,13 +52,13 @@ CREATE TABLE IF NOT EXISTS books_eee (
     uploaded_at TIMESTAMP WITH TIME ZONE DEFAULT now()
 );
 
--- 4) Useful indexes
+
 CREATE INDEX IF NOT EXISTS idx_books_cse_name ON books_cse (lower(book_name));
 CREATE INDEX IF NOT EXISTS idx_books_eee_name ON books_eee (lower(book_name));
 CREATE INDEX IF NOT EXISTS idx_users_mail ON users (lower(institute_mail));
 CREATE INDEX IF NOT EXISTS idx_downloads_book_uuid ON downloads (book_uuid);
 
--- 5) Make replica identity FULL for safe replication of updates/deletes
+-- Make replica identity FULL for safe replication of updates/deletes
 ALTER TABLE users REPLICA IDENTITY FULL;
 ALTER TABLE admins REPLICA IDENTITY FULL;
 ALTER TABLE downloads REPLICA IDENTITY FULL;
