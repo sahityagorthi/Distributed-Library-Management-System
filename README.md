@@ -48,7 +48,7 @@ Then connect to the librarydb database and execute the following commands:
 2. CREATE PUBLICATION books_cse_pub FOR TABLE books_cse;
 
 3. CREATE SUBSCRIPTION sub_from_site2
-    CONNECTION 'host=<site2_IP> port=5432 dbname=librarydb user=replica password=<your replica user password>'
+    CONNECTION 'host=<site2_IP> port=5432 dbname=librarydb user=replica password=your replica user password'
     PUBLICATION replicated_pub, books_eee_pub;
 
 4. CREATE OR REPLACE VIEW books AS
