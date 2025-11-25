@@ -1,7 +1,7 @@
 # Distributed-Library-Management-System
 
-This is project is a prototype of a real-time large scale open web library
-It mainly demonstrates the concepts of distributed databaes namely, replication and fragmentation.
+This project is a prototype of a real-time large scale open web library
+It mainly demonstrates the concepts of distributed databases namely, replication and fragmentation.
 
 This Library portal mainly has the following features:
 1. User Registration and Login
@@ -24,7 +24,7 @@ Make necessary changes in the following files so that the 2 systems can access e
 * sudo nano /etc/postgresql/14/main/postgresql.conf
 * sudo nano /etc/postgresql/14/main/pg_hba.conf
 
-## Project specific DB commands (in both systems)
+## Project specific DB commands
 
 Enter into the psotgres shell using the command:
 * sudo -u postgres psql
